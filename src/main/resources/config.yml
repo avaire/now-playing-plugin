@@ -1,0 +1,8 @@
+
+# The server IDs will be used by the plugin to filter out
+# events from different servers, only servers with their
+# ID in the list below will be handled by the plugin,
+# everything else will be ignored.
+#
+server-ids:
+  - '284083636368834561'

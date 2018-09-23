@@ -1,0 +1,6 @@
+name: 'NowPlaying'
+main: 'com.avairebot.nowplaying.NowPlaying'
+version: '1.0'
+author: 'Alexis Tan <Senither#0001>'
+description: 'A simple plugin that links the bots status to the music handler, so people can see what is being played in the bots status messages.'
+requires: '0.7.139'
