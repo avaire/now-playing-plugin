@@ -7,7 +7,6 @@ public class NowPlaying extends JavaPlugin {
     @Override
     public void onEnable() {
         saveDefaultConfig();
-        reloadConfig();
 
         registerEventListener(new MusicEventListener(this));
     }
