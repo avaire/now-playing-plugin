@@ -4,7 +4,7 @@ import com.avairebot.contracts.handlers.EventListener;
 import com.avairebot.handlers.events.MusicEndedEvent;
 import com.avairebot.handlers.events.NowPlayingEvent;
 import com.avairebot.scheduler.tasks.ChangeGameTask;
-import net.dv8tion.jda.core.entities.Game;
+import net.dv8tion.jda.api.entities.Activity;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -39,8 +39,8 @@ public class MusicEventListener extends EventListener {
         );
 
         ChangeGameTask.hasCustomStatus = true;
-        plugin.getAvaire().getShardManager().setGame(
-            Game.listening(event.getSongTitle())
+        plugin.getAvaire().getShardManager().setActivity(
+            Activity.listening(event.getSongTitle())
         );
     }
 
